@@ -1,0 +1,16 @@
+# config file version
+apiVersion: 1
+
+# list of datasources to insert/update depending
+# whats available in the database
+datasources:
+- name: MySQL_openhab
+  type: mysql
+  url: mysql:3306
+  database: openhab
+  user: openhab 
+  secureJsonData:
+    password: openhab
+  version: 1
+  editable: true
+

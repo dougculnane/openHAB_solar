@@ -1,0 +1,12 @@
+Strategies {
+  everyHour : "0 0 * * * ?"
+  everyDay  : "0 0 0 * * ?"
+  default = everyChange, restoreOnStartup
+}
+
+Items {
+  AC_Power : strategy = everyChange, everyHour, restoreOnStartup
+  Grid_Power : strategy = everyChange, everyHour, restoreOnStartup
+  Load_Power : strategy = everyChange, everyHour, restoreOnStartup
+}
+

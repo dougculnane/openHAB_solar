@@ -1,0 +1,13 @@
+Number AC_Power { channel="fronius:powerinverter:mybridge:myinverter:inverterdatachannelpac" }
+Number Day_Energy { channel="fronius:powerinverter:mybridge:myinverter:inverterdatachanneldayenergy" }
+Number Total_Energy { channel="fronius:powerinverter:mybridge:myinverter:inverterdatachanneltotal" }
+Number Year_Energy { channel="fronius:powerinverter:mybridge:myinverter:inverterdatachannelyear" }
+Number FAC { channel="fronius:powerinverter:mybridge:myinverter:inverterdatachannelfac" }
+Number IAC { channel="fronius:powerinverter:mybridge:myinverter:inverterdatachanneliac" }
+Number IDC { channel="fronius:powerinverter:mybridge:myinverter:inverterdatachannelidc" }
+Number UAC { channel="fronius:powerinverter:mybridge:myinverter:inverterdatachanneluac" }
+Number UDC { channel="fronius:powerinverter:mybridge:myinverter:inverterdatachanneludc" }
+Number Grid_Power { channel="fronius:powerinverter:mybridge:myinverter:powerflowchannelpgrid" }
+Number Load_Power { channel="fronius:powerinverter:mybridge:myinverter:powerflowchannelpload" }
+Switch Inverter_Online { channel="network:pingdevice:Inverter:online" }
+

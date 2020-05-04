@@ -1,0 +1,6 @@
+network:pingdevice:Inverter [ hostname="inverter" ]
+
+Bridge fronius:bridge:mybridge [hostname="inverter",refreshInterval=15] {
+   Thing powerinverter myinverter [ deviceId=1 ]
+}
+
