@@ -15,7 +15,7 @@ docker run --name mysql --net solar-openhab -e MYSQL_ROOT_PASSWORD=openhab -e MY
 # Build and run openhab docker container.
 cd openhab
 docker build -t solar-openhab .
-docker run --name openhab --add-host=inverter:10.0.1.20 --net solar-openhab -p 8080:8080 -v /etc/localtime:/etc/localtime:ro -d solar-openhab 
+docker run --name openhab --add-host=inverter:10.0.1.20 --net solar-openhab -p 8080:8080 -e "EXTRA_JAVA_OPTS=-Duser.timezone=CET" -d solar-openhab 
 cd ..
 
 #  Build and run grafana docker container.
