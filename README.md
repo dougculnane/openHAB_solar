@@ -1,5 +1,6 @@
-#Example openHAB solar set up.
+# Example openHAB solar set up.
 
+This is an example dockerized openHAB/mysql/grafana set up for openHAB and a Fronious inveter.
 
 ```bash
 git clone https://github.com/dougculnane/openHAB_solar.git
@@ -24,10 +25,10 @@ docker run --name grafana --net solar-openhab -p 3000:3000 -d solar-grafana
 cd ..
 ```
 
-If everything works: http://localhost:8080/habpanel/index.html#/view/Overview
+You need to set the correct IP Address of your inverter "--add-host=inverter:10.0.1.20"
 
 You can browse your data on http://localhost:3000 logging in as user admin and password admin.
 
-You can browse openHAB on http://localhost:8080
+You can browse openHAB on http://localhost:8080.  There is also a HAB-Panel with an embedded grafana chart.
 
 
